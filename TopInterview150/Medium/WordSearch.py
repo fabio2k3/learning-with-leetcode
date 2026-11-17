@@ -34,7 +34,3 @@ class Solution:
                     return True
 
         return encontrada
-
-    c = "casa"
-
-    print(c[-1])
