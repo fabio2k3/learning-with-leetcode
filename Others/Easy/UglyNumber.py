@@ -1,8 +1,7 @@
 class Solution:
     def isUgly(self, n: int) -> bool:
-        if n % 2 == 0:
+        if n == 0: 
             return False
-        
         n_copy = n
 
         while True:
@@ -14,6 +13,11 @@ class Solution:
 
             elif n_copy % 2 == 0:
                 n_copy //= 2
-                
+
             else:
                 break
+
+        if n_copy == 1:
+            return True
+        else: 
+            return False
